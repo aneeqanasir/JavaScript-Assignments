@@ -72,8 +72,69 @@ colors.pop()
 console.log(colors);
 
 var addIndex = +prompt("What index you want to add color")
-var clrIndex = prompt("Which Color")
+var clrIndex = prompt("Which Color you want to add?")
 colors.splice(addIndex , 0 , clrIndex)
 console.log(colors);
 
+var deltIndex = +prompt("What index you want to Delete color")
+var deltClr = prompt("How many colors you want to delete?")
 
+colors.splice(deltIndex , deltClr)
+console.log(colors);
+
+//qies 10----------------
+
+var numbers = [300, 289, 678, 290]
+console.log(numbers)
+numbers.sort()
+console.log("After ascending order: " +numbers)
+
+//ques 11 ================
+
+var cities = ["Karachi" , "Lahore" , "Peshawar" , "Multan" , "Hyderabad"]
+console.log(cities);
+
+var selectedCities = cities.slice(1 , 4)
+console.log(selectedCities);
+
+var fruits = ["Apple" , "Mange" , "Banana", "Grapes"]
+console.log(fruits);
+console.log(fruits.join(" "));
+
+console.log("Fruirs names: " + fruits.join(" | "));
+
+//ques 12=================
+
+var arr = []
+
+arr.push(prompt("Enter first value:"));
+arr.push(prompt("Enter second value:"));
+arr.push(prompt("Enter third value:"));
+console.log(arr);
+
+console.log(arr.shift());
+console.log(arr.shift());
+console.log(arr.shift());
+
+//ques 14===========
+
+var arrReverse = []
+
+arrReverse.push(prompt("Enter first value:"));
+arrReverse.push(prompt("Enter second value:"));
+arrReverse.push(prompt("Enter third value:"));
+console.log(arrReverse);
+
+console.log(arrReverse.pop());
+console.log(arrReverse.pop());
+console.log(arrReverse.pop());
+
+//quse 15 ----------------
+
+var mobiles = ["iPhone" , "Samsung" , "Motrola" , "Nokia" , "Sony"]
+document.write(`<option >
+        <select >${mobiles[0]}</select>
+        <select >${mobiles[1]}</select>
+        <select >${mobiles[2]}</select>
+        <select >${mobiles[3]}</select>
+    </option>`)
