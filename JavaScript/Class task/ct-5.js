@@ -35,3 +35,4 @@ if(!hasAlpha){
 if(!hasNum){
     alert("Must contain Numbers")
 }
+
