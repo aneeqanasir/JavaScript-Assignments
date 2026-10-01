@@ -1,74 +1,98 @@
-// var firstName = prompt("Enter your first name")
-// var lastName = prompt("Enter your last name")
+//question 01-------------------------------
+var firstName = prompt("Enter your first name")
+var lastName = prompt("Enter your last name")
 
-// var  newName = firstName + lastName
-// alert("Welcome to my page" + " " + newName)
+//question 02-------------------------------
 
-// var phone = prompt("Enter your favourite phone")
-// console.log("Length of string is "+ phone.length)
+var  newName = firstName + lastName
+alert("Welcome to my page" + " " + newName)
 
-// var firstIndex = prompt("enter a word with letter n")
-// console.log("First index of "+ firstIndex + " is " + firstIndex.indexOf("n"))
+var phone = prompt("Enter your favourite phone")
+console.log("Length of string is "+ phone.length)
 
-// var lastIndex = prompt("enter a word with letter l")
-// console.log("Last index of "+ lastIndex + " is " + lastIndex.lastIndexOf("l"))
+//question 03-------------------------------
 
-// var thirdIndex = prompt("Find the 3rd index of your word")
-// console.log("3rd index of character "+ thirdIndex + " is " + thirdIndex[3])
+var firstIndex = prompt("enter a word with letter n")
+console.log("First index of "+ firstIndex + " is " + firstIndex.indexOf("n"))
 
-// var city = "Hyderabad"
-// var newCity = city.replace('Hyder' , 'Islam')
-// console.log(newCity);
+//question 04-------------------------------
 
-// var para = "Ali and Sami are best friends. They play cricket and football together"
-// var newPara = para.replace( /and/g , "&") // /and /g ----- [means change all globally]
-// console.log(newPara);
+var lastIndex = prompt("enter a word with letter l")
+console.log("Last index of "+ lastIndex + " is " + lastIndex.lastIndexOf("l"))
 
-// var num472 = 472
-// console.log("Type of 472: " + typeof(num472));
+//question 05-------------------------------
 
-// var str472 = '472'
-// console.log("Type of '472': " + typeof(str472));
+var thirdIndex = prompt("Find the 3rd index of your word")
+console.log("3rd index of character "+ thirdIndex + " is " + thirdIndex[3])
 
-// var capital = prompt("Enter a word")
-// var newCapital = capital.toUpperCase()
+//question 06-------------------------------
 
-// console.log(newCapital);
+var city = "Hyderabad"
+var newCity = city.replace('Hyder' , 'Islam')
+console.log(newCity);
 
+//question 07-------------------------------
 
-// var titleCase = prompt("Enter something")
-// var newTitle = titleCase.slice(0 , 1)
-// var upperTitle = newTitle.toUpperCase()
-// var removeJ = titleCase.slice(1 , titleCase.length)
-// console.log(upperTitle +  removeJ);
+var para = "Ali and Sami are best friends. They play cricket and football together"
+var newPara = para.replace( /and/g , "&") // /and /g ----- [means change all globally]
+console.log(newPara);
 
-// var num32 = 35.36
-// var result = num32.toString().replace("." , "" )
-// console.log(result);
+//question 08-------------------------------
 
+var num472 = 472
+console.log("Type of 472: " + typeof(num472));
 
-// var symbols = prompt("Don't use these symbols @ ! , .")
-// var newSymbols  = symbols.charCodeAt()
+var str472 = '472'
+console.log("Type of '472': " + typeof(str472));
 
-// if (newSymbols === 33 || newSymbols === 44 || newSymbols === 46 || newSymbols === 64) {
-//     alert("These symbols are not allowed!")
-// }
+//question 09-------------------------------
 
+var capital = prompt("Enter a word")
+var newCapital = capital.toUpperCase()
 
-// var bakery = ["cake" , "cookies" , "pizza" , "ice-cream" , "patties" , "brownie" , "sweets" , "chips"]
-// var flagBakery = false
-// var userBakery= prompt("Search bakery items")
+console.log(newCapital);
 
-// for(var i =0 ; i <= bakery.length ; i++){
-//     bakery[i]
-//     if(bakery[i] === userBakery){
-//         flagBakery= true
-//         alert(userBakery + " is avaialable on index " + i)
-//     }
-// }
-// if(!flagBakery){
-//     console.log("Sorry! "+ userBakery +" is not availabale");
-// }
+//question 10-------------------------------
+
+var titleCase = prompt("Enter something")
+var newTitle = titleCase.slice(0 , 1)
+var upperTitle = newTitle.toUpperCase()
+var removeJ = titleCase.slice(1 , titleCase.length)
+console.log(upperTitle +  removeJ);
+
+//question 11-------------------------------
+
+var num32 = 35.36
+var result = num32.toString().replace("." , "" )
+console.log(result);
+
+//question 12-------------------------------
+
+var symbols = prompt("Don't use these symbols @ ! , .")
+var newSymbols  = symbols.charCodeAt()
+
+if (newSymbols === 33 || newSymbols === 44 || newSymbols === 46 || newSymbols === 64) {
+    alert("These symbols are not allowed!")
+}
+
+//question 13-------------------------------
+
+var bakery = ["cake" , "cookies" , "pizza" , "ice-cream" , "patties" , "brownie" , "sweets" , "chips"]
+var flagBakery = false
+var userBakery= prompt("Search bakery items")
+
+for(var i =0 ; i <= bakery.length ; i++){
+    bakery[i]
+    if(bakery[i] === userBakery){
+        flagBakery= true
+        alert(userBakery + " is avaialable on index " + i)
+    }
+}
+if(!flagBakery){
+    console.log("Sorry! "+ userBakery +" is not availabale");
+}
+
+//question 14-------------------------------
 
 // a-z 97 - 122
 // A-Z 65 - 90
@@ -111,16 +135,20 @@ if (startNumber){
     alert("Can't start with a number")
 }
 
+//question 15-------------------------------
+
 var uni = "University of Karachi"
 
 for (var u = 0; u < uni.length ; u++){
     console.log(uni[u])
 }
 
+//question 16-------------------------------
 
 var userCity = prompt("Enter your City")
 console.log("Last index of " + userCity+ " is "+ userCity[userCity.length-1]);
 
+//question 17-------------------------------
 
 var sentence = "The quick brown fox jumps over the lazy dog"
 var count = 0
