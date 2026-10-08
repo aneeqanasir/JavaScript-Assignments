@@ -64,3 +64,66 @@ if(getTime >= 12 ){
 
 var lastDate = new Date(2020, 11, 31)
 console.log(lastDate);
+
+//question 09
+var currentDate = new Date ()
+var ramadanCount = new Date("February 7, 2027")
+var dateBefore = currentDate.getTime()
+var ramadanBefore = ramadanCount.getTime()
+
+var diff = ramadanBefore - dateBefore
+var daysDiff= Math.floor(diff / (1000 * 60 * 60 * 24)) 
+console.log(daysDiff , " days left in Ramadan 2027"); // 1000 sy divide krny pr milisecond sy second ma convert hoga
+
+// question 10
+// make a program which referce the second of the year 2026 from beginning till now
+
+var year = new Date ()
+var startYear = new Date("1 january 2026")
+var endYear = year.getTime() /1000
+var startSeconds = startYear.getTime() /1000
+
+var difference = Math.floor(endYear - startSeconds)
+console.log(difference , " seconds passed till 1 january 2026");
+
+// queation 11
+
+var dateHours = new Date()
+var hours = dateHours.getHours()
+dateHours.setHours(hours + 1)
+console.log(dateHours);
+
+// question 12
+var back100Years = new Date ()
+console.log("Current Date ", back100Years);
+
+var backDate = back100Years.getFullYear()
+back100Years.setFullYear(backDate - 100)
+console.log("Back to 100 years" , back100Years);
+
+// question 13
+
+var userDOB = +prompt("Enter your age")
+var dateDOB = new Date ()
+var yearDOB = dateDOB.getFullYear()
+
+var diffDOB = yearDOB - userDOB
+console.log(diffDOB);
+
+// question 14
+document.write (`<h1>K-Electric Bill</h1> `)
+var customer = prompt("Enter your name")
+document.write("Customer Name: " , customer , "<br>")
+
+var month = prompt("Month")
+document.write("Current Month: " , month , "<br>")
+
+var units = prompt("Number of Units")
+document.write("Number of Units: " , units , "<br>")
+
+document.write("Charges per unit: 16 <br>")
+
+var kElectric = units * 16
+document.write("Net Amount Paybill (within due date): ", kElectric ,"<br>")
+document.write("Late payment charges: 350 <br>")
+document.write("Gross amount Paybill (after due date): ", (kElectric + 350), "<br>")
