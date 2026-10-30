@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+
+    <!-- On tables -->
+    <!-- <table border="1" cellpadding = "25px">
+        <tr>
+            <th >Name</th>
+            <th >Email Address</th>
+            <th>Actions</th>
+            
+        </tr>
+        <tr>
+            <td >Aneeqa</td>
+            <td >aneeqa972@gmail.com</td>
+            <td  id="removeBtn"><button  onclick="remove(this)">Remove</button>
+            <button>Edit</button></td>
+        </tr>
+        
+    </table> -->
+
+    <form onsubmit="addStudents(event)">
+        <h1>Add Students</h1>
+        <input type="text" placeholder="Enter Name" id="studentName">
+        <input type="number" placeholder="Age" id="studentAge">
+        <button type="submit">Add Students</button>
+
+    </form>
+    <table>
+        <thead id="tableHead">
+            <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th id="remove">Actions</th>
+            </tr>
+        </thead>
+
+        <tbody id="studentBody">
+
+        </tbody>
+    </table>
+
+
+
+
+</head>
+
+<body>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+        crossorigin="anonymous"></script>
+    <script src="ct-11.js"></script>
+</body>
+
+</html>
