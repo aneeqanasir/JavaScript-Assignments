@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    background-color: #f3efff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 40px 60px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+#display {
+    display: block;
+    font-size: 50px;
+    font-weight: bold;
+    color: #7f768f;
+    margin: 25px 0;
+}
+
+button {
+    background-color: #7041c5;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #512b96;
+    transform: scale(1.05);
+}
+    </style>
+</head>
+<body>
+    <button id="inc" onclick="increment(+1)">Increment</button>
+    <span id="display">0</span>
+    <button id="dec" onclick="decrement()">Decrement</button>
+    <script src="script.js"></script>
+</body>
+</html>
