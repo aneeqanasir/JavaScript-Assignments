@@ -1,0 +1,41 @@
+
+body {
+    font-family: Arial;
+    background-color: #fce4ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#formContainer {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #e91e63;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#cardContainer {
+    display: none;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+}
