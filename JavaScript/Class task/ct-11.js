@@ -16,8 +16,16 @@ studentBodyValue.innerHTML += `
 <tr>
             <td >${nameValue}</td>
             <td >${ageValue}</td>
+            <td>
+            <button onclick = "deleteBtn(this)">Delete</button>
+            <button>Edit</button>
+            </td>
+             
             
         </tr>
-`
 
+}
+function deleteBtn(e){
+    var activeRow = e.parentNode.parentNode
+    activeRow.remove()
 }

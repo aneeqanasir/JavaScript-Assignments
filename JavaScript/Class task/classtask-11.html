@@ -31,7 +31,7 @@
         <button type="submit">Add Students</button>
 
     </form>
-    <table>
+    <table border="1" cellpadding = "30px" >
         <thead id="tableHead">
             <tr>
             <th>Name</th>
@@ -41,12 +41,21 @@
         </thead>
 
         <tbody id="studentBody">
-
         </tbody>
     </table>
 
 
-
+<!-- <div id="editFormContainer">
+        <h2>Edit Student Details</h2>
+        <form id="editStudentForm" onsubmit="saveChanges(event)">
+            <label>Name:</label>
+            <input type="text" id="editName" required>
+            <label>Age:</label>
+            <input type="number" id="editAge" required>
+            <button type="submit">Save Changes</button>
+            <button type="button" onclick="closeEditForm()">Cancel</button>
+        </form>
+    </div> -->
 
 </head>
 

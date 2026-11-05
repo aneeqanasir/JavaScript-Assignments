@@ -4,19 +4,25 @@ var operator = ""
 var num2 = ""
 var isSecondNum = false
 function addToDisplay(input) {
+   
+    var isOperator = input == "+" || input == "-" || input == "*" || input == "/" || input == "%"
+
     display.value += input;
     console.log(input);
-
-    if(!isSecondNum && input !== "+" && input !== "-" && input !== "*" && input !== "/" && input !== "%" ){
+    if(isOperator && isSecondNum && num2 == ""){
+        operator = input
+        display.value = display.value.slice(0 , -1)
+    }
+    else if(!isOperator && !isSecondNum ){
         num1 += input 
     console.log("num1 ",num1);
 
-    }else if(!isSecondNum && input == "+" || input == "-" || input == "*" || input == "/" || input == "%"){
+    }else if(!isSecondNum && isOperator){
         operator = input
         isSecondNum= true
     console.log("op ",input);
 
-    }else if(isSecondNum && input !== "+" && input !== "-" && input !== "*" && input !== "/" && input !== "%" ){
+    }else if(isSecondNum && !isOperator ){
         num2 += input
     console.log("num2 ",num2);
 
@@ -56,4 +62,10 @@ function clearDisplay(){
     isSecondNum = false
     
 
+}
+
+function deleteNumber(e){
+    var display = document.getElementById("display")
+    display.value = display.value.slice(0 , -1)
+    
 }
