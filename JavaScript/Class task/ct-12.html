@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hideImg{
+    display: none;
+}
+img{
+    width: 500px;
+    height: 500px;
+}
+    </style>
+</head>
+<body>
+
+    <img src="image/cat.jpg" class="" onClick ="hideImg(this)" id="hideImg" onmouseenter="catChange()" alt="">
+
+    <img src="image/cat2.jpg" onmouseover="changeImg(id , 'image/cat3.jpg')" id="catImg" alt="">
+    <img src="image/rain.jpg" onmouseover="changeImg(id , 'image/rain2.jpg')" id="rainImg" alt="">
+    <br><br>
+    <a href="https://i.pinimg.com/564x/b9/7b/03/b97b039cb78a878b3ad74cc2d23942ad.jpg" onmouseover="link()" id="link">Button</a>
+    <button></button>
+
+    <script src="ct-12.js"></script>
+</body>
+</html>
