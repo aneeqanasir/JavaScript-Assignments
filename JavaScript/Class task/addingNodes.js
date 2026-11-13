@@ -13,9 +13,12 @@ var text = document.createTextNode("3D Painting")
 h1.appendChild(text)
 document.body.append(h1)
 
-
-
-
-
 document.body.appendChild(p)
 
+function btnRemove(){
+    var btn = document.getElementById("remove")
+    var p = btn.parentNode.children[1]
+    var div = document.getElementById("parent")
+    var remove = div.removeChild(p)
+    console.log(div);
+}
